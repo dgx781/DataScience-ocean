@@ -1,0 +1,77 @@
+Windows Poweshell Commands:- start powershell(in cmd), Get-Help
+1. md/mkdir- for folders, tpe nul> filename.ext - for files ,$PSVersionTable
+2. rmdir- for folders, del filename.ext- for files
+3. msinfo32
+4. chkdsk
+5. winver
+6. hostname
+7. wmic- cpu
+8. dir
+9. pwd
+10. dir| ft "name"
+11. xcopy filename.ext "folder name" for single file
+12. xcopy *.ext "folder name"
+13. xmove filename.ext "folder name" for single file
+14. xmove *.ext "location/folder name" (EX- "D:/"folder name"")
+15. cls
+16. systeminfo
+17. getmac
+18. wmic bios get smbiosbiosversion
+19. wmic /output:D:\file.ext product get name, version
+20. wmic- quit
+21. diskpart
+22. diskpart>- list disk
+23. diskpart>- select disk 0
+24. diskpart>- detail disk
+25. diskpart>- quit
+26. diskpart>- exit
+27. tasklist
+28. taskkill /pid (number)
+29. Get-Process
+30. Get-Process Process Name| Stop-Process
+31. net start
+32. net stop "service name"
+33. net start "service name"
+34. Get-History/HISTORY/H
+35. Invoke-History (index no of the service in the history)
+36. ipconfig/Get-netIPAdress/Get-netIPConfiguration
+37. tracert www.google.com(domain name/ IP if known)
+38. Test-NetConnection- Traceroute/Trace-Command (Domain name/ IP address if known)
+39. Get-NetAdapter/ wmic nic get adaptertype, name, MACAddress
+40. ping(domain/IP)
+41. Test-NetConnection (domain/IP)
+42. Get-DnsClient
+43. Disable- NetAdapter -name "Adapter to be disabled"
+44. Enable- NetAdapter -name "Adapter to be enabled"
+45. Resolve-DNSName (domain name/IP)
+46. Net-NewIPAdress- IPAddress- ipaddress of adapter PrefixLength- length in bytes InterfaceALias- name of adapter
+47. Remove-NetIPaddress
+48. netsh interface ipv4 set address name="adapter name" static IPAddress Subnet Mask Default Gateway
+49. Get-NetAdapter
+50. netsh wlan show drivers
+51. netsh wlan show interfaces
+52. netsh wlan show network mode=bssid/ssid
+53. netsh wlan show profile name="SSID/network name(Ex "DIBYOJIT_5G")" key=clear
+54. netsh wlan delete profile name=" wireless network name(EX- TP-Link_ADA8)"
+55. netsh wlan set hostednetwork mode= allow ssid="any name of the network" key="password of 8-63 digits with a cobination of letters and nos"
+56. netsh wlan start hostednetwork
+57. netsh wlan add profile filename="file.xml"
+58. netsh wlan connect name="network name"
+59. Get-NetIPAddress
+60. ipconfig
+61. cipher/e (encryption for all files), cipher/e filename.ext for a particular file
+62. Set-ExecutionPolicy- RemoteSigned, Restricted, Unrestricted, AllSigned
+63. Get-ExecutionPolicy
+64. Get-ExecutionPolicy- List
+65. Get-ExecutionPolicy -h
+66. where.exe python
+67. curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py(Installing pip)
+68. python get-pip.py --user(installing pip)
+69. Get-Command
+70. Get-SystemLanguage
+71. Get-Service
+72. Get-Alias
+73. Get-Module
+74. Get-Content .\filename.ext
+75. Get-Command -Module Microsoft.PowerShell.LocalAccounts
+76. Get-LocalUser
